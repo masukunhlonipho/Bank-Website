@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snip Bank - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        nav {
+            background-color: #71cc9f;
+            padding-top: 10px; /* Increased padding for spacing */
+            padding-bottom: 10px;
+            margin-bottom: 0;
+        }
+
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .banner{
+            position: relative;
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 78vh; /* Adjust as needed */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center; /* Center the content horizontally */
+            align-items: center; /* Center the content vertically */
+        }
+
+        .banner::before {
+            content: '';
+            overflow: hidden;
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:100%;
+            background-image:url('bank.jpeg');
+            background-size:cover;
+            background-position:center;
+            filter: blur(2px); /* Adjust the blur amount as needed */
+            opacity: 50; /* Adjust the opacity level as needed */
+            z-index: -1; /* Ensure the background image is behind the text content */
+        }
+
+        .login-form{
+            border-radius: 10px;
+            align-items: center;
+            text-align: center;
+            height: 400px;
+            font-size: 12px;
+            background-color: rgba(255, 255, 255, 0.8); /* Added background color with opacity */
+            padding: 8px; /* Added padding for spacing */
+            width: 40%; /* Set width to fit the content */
+            margin: 0 auto; /* Center the form horizontally */
+        }
+
+        .login-form, .login-form[input]{
+            font-size: 12px;
+            padding: 5px;
+        }
+        .login-form input, 
+        .login-form button,
+        .login-form select,
+        .login-form label,
+        .login-form a,
+        .login-form p {
+            font-size: 12px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .login-form button {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            border: none; /* No border */
+            padding: 10px 20px; /* Padding */
+            text-align: center; /* Center text */
+            text-decoration: none; /* No underline */
+            display: inline-block; /* Make it inline-block */
+            font-size: 14px; /* Font size */
+            cursor: pointer; /* Cursor style */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+
+        /* Button hover effect */
+        .login-form button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1 style="text-align: left;">SNIP BANK</h1></a>&emsp;
+        <a href="index.html"><img src="logo.png" alt="Bank Logo" class="logo"></a> <!-- Bank logo image -->
+    </header>
+    <nav>
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="#">Services</a>
+                <a href="#">Updates</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="nav-right">
+                <form class="search-form">
+                    <input type="text" placeholder="Search ...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="banner">
+        
+        <form class="login-form" id="login-form">
+            <h2>Login</h2>
+            <input type="text" id="username" name="username" placeholder="Username or Email" required><br><br>
+            <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+            <label for="remember-me">
+            <input type="checkbox" id="remember-me" name="remember-me"> Remember Me
+            </label><br><br>
+            <button type="submit">Login</button><br><br>
+            <a href="forgot-password.html">Forgot Password?</a><br><br>
+            <div">
+                <button type="button" class="social-login-btn facebook">Login with OTP</button>
+                <button type="button" class="social-login-btn google">Login with Google</button>
+            </div>
+            <div>
+                <p>Secure Login <i class="fas fa-lock"></i></p>
+            </div>
+        </form><br>
+        
+    </main>
+    
+<footer>
+    <div class="footer-content">
+        <div>
+            <p>If you have any questions or inquiries, feel free to contact us:</p>
+            <p>Email: info@snipbank.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+            <p><a href="https://maps.app.goo.gl/yAcPrErHscSVnmJ29">123 Riverstone Mall, Manzini, Swaziland</a></p>
+        </div>
+        <div>
+            <a href="#" class="social-link"><p>Privacy and Policy</p></a>
+            <a href="#" class="social-link"><p>Frequently Asked Questions(FAQs)</p></a>
+            <p><a href="#" class="social-link">Facebook</a></p>
+            <p><a href="#" class="social-link">Twitter</a></p>
+            <p><a href="#" class="social-link">Instagram</a></p>
+            <!-- Add more social media links as needed -->
+        </div>
+    </div>
+    <p class="copyright">&copy; 2024 Bank Website. All rights reserved.</p>
+</footer>
+    
+</body>
+</html>

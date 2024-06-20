@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snip Bank - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        nav {
+            background-color: #71cc9f;
+            padding-top: 10px; /* Increased padding for spacing */
+            padding-bottom: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .banner {
+            position: relative;
+            height:60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            
+        }
+
+        .banner::before {
+            content: '';
+            overflow: hidden;
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:100%;
+            background-image:url('bank.jpeg');
+            background-size:cover;
+            background-position:center;
+            filter: blur(2px); /* Adjust the blur amount as needed */
+            opacity: 100; /* Adjust the opacity level as needed */
+            z-index: -1; /* Ensure the background image is behind the text content */
+        }
+
+        .content {
+            position: relative;
+            z-index: 1; /* Ensure the text content is above the background image */
+            text-align: center; /* Center the text content */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            width: 100%;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1 style="text-align: left;">SNIP BANK</h1></a>&emsp;
+        <a href="index.html"><img src="logo.png" alt="Bank Logo" class="logo"></a> <!-- Bank logo image -->
+    </header>
+        <nav>
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="#">Services</a>
+                <a href="#">Updates</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="nav-right">
+                <form class="search-form">
+                    <input type="text" placeholder="Search ...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav> 
+    <main>
+
+        <section class="banner">
+            <div class="content">
+                <h2 style="font-size: 50px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">WELCOME TO SNIP BANK!</h2>            
+                <marquee style="font-size: 20px; width:100%;" class="marquee-container" scrollamount="15%" behavior="scroll" direction="left">
+                    Explore our services and manage your finances securely.
+                </marquee>
+            </div>
+        </section>
+        <hr>
+                <section class="banner2">
+            <div class="services">
+                <h2>Services</h2>
+                <div class="service-buttons">
+                    <div class="service">
+                        <img src="personal_banking_icon.png" alt="Personal Banking">
+                        <a href="#" class="service-link"><h3>Personal Banking</h3></a>
+                        <p>Manage your personal finances with ease and security.</p>
+                    </div>
+                    <div class="service">
+                            <img src="business_banking_icon.png" alt="Business Banking">
+                            <a href="#" class="service-link"><h3>Business Banking</h3></a>
+                            <p>Streamline your business finances with confidence and efficiency</p>
+                    </div>
+                    <div class="service">
+                            <img src="loans_icon.png" alt="Loans and Mortgages">
+                            <a href="#" class="service-link"><h3>Loan and Mortgages</h3></a>
+                            <p>Unlock your financial potential with tailored lending solutions and competitive rates</p>
+                    </div>
+                    <div class="service">
+                            <img src="investment_icon.png" alt="Investment Planning">
+                            <a href="#" class="service-link"><h3>Investment</h3></a>
+                            <p>Chart your course to financial success with expert guidance and personalized investment strategies.</p>
+                        </div>
+                    <div class="service">
+                            <img src="retirement_icon.png" alt="Retirement Planning">
+                            <a href="#" class="service-link"><h3>Retirement Planning</h3></a>
+                            <p>Secure your future and enjoy peace of mind with comprehensive retirement planning solutions tailored to your goals</p>
+                        </div>
+                    <div class="service">
+                            <img src="online_banking_icon.png" alt="Online Banking Services">
+                            <a href="#" class="service-link"><h3>Online Banking</h3></a>
+                            <p>Experiance seamless banking anytime, anywhere with our secure and convenient online platform</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner3">    
+            <div class="about">
+                <h2>About Us</h2>
+                <p>
+                    Welcome to Snip Bank, your trusted financial partner. At Snip Bank, we are committed to providing exceptional banking services tailored to meet your unique needs.
+                    With a rich history spanning over 50 years, Snip has established itself as a cornerstone of the community, serving individuals, businesses, and institutions with integrity and professionalism.
+                    Our mission is to empower our customers to achieve their financial goals and dreams. Whether you're saving for the future, buying a home, starting a business, or planning for retirement, we're here to help you every step of the way.
+                    At Snip Bank, we prioritize innovation and technology to deliver convenient and secure banking solutions. From online and mobile banking to personalized financial advice, we strive to make banking simple, accessible, and rewarding for you.
+                    As a responsible corporate citizen, Snip Bank is committed to giving back to the communities we serve. Through philanthropic initiatives and volunteer efforts, we contribute to the well-being and prosperity of our neighborhoods.
+                    Thank you for choosing Snip Bank as your financial partner. We look forward to serving you and building a brighter future together.
+                </p>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"Snip Bank helped me achieve my financial goals with their excellent services."</p>
+                <cite>John Doe</cite>
+            </div>
+            <div class="testimonial">
+                <p>"I've been a customer for years, and Snip Bank continues to exceed my expectations with their personalized approach to banking."</p>
+                <cite>Jane Smith</cite>
+            </div>
+            <div class="testimonial">
+                <p>"The team at Snip Bank made the mortgage process smooth and stress-free. I highly recommend their services."</p>
+                <cite>Michael Johnson</cite>
+            </div>
+            <div class="testimonial">
+                <p>"Snip Bank's investment planning helped me grow my wealth strategically. Thank you for your expertise!"</p>
+                <cite>Emily Brown</cite>
+            </div>
+            <h4 style="margin-top: 30px; font-style: italic;">Have a story to share? We'd love to hear from you! Share your experience with Snip Bank <br>
+                <a href="#">click here!</a>
+            </h4>
+        </section>
+    </main>
+    
+    <hr>
+    <footer>
+        <div class="footer-content">
+            <div>
+                <p>If you have any questions or inquiries, feel free to contact us:</p>
+                <p>Email: info@snipbank.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p><a href="https://maps.app.goo.gl/yAcPrErHscSVnmJ29">123 Riverstone Mall, Manzini, Swaziland</a></p>
+            </div>
+            <div>
+                <a href="#" class="social-link"><p>Privacy and Policy</p></a>
+                <a href="#" class="social-link"><p>Frequently Asked Questions(FAQs)</p></a>
+                <p><a href="#" class="social-link">Facebook</a></p>
+                <p><a href="#" class="social-link">Twitter</a></p>
+                <p><a href="#" class="social-link">Instagram</a></p>
+                <!-- Add more social media links as needed -->
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Bank Website. All rights reserved.</p>
+    </footer>
+      
+</body>
+</html>

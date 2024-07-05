@@ -34,8 +34,9 @@ nav a {
 }
 
 nav a:hover {
-    color: #f1f1f1;
     transform: scale(1.1); /* Increase the scale to 110% on hover */
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 main {
@@ -58,7 +59,7 @@ main {
 .banner2{
 
     margin-bottom: 0 0;
-    background-image: url('bank2.jpg'); /* Replace 'banner.jpg' with your image file */
+    background-image: url('images/bank2.jpg'); /* Replace 'banner.jpg' with your image file */
 	background-size:cover;
 	background-position: center;
     padding-bottom: 10px;
@@ -105,7 +106,7 @@ font-style: italic;
 }
 
 .banner3{
-    background-image: url('bank3.jpg'); /* Replace 'banner.jpg' with your image file */
+    background-image: url('images/bank3.jpg'); /* Replace 'banner.jpg' with your image file */
 	background-size:cover;
 	background-position: center;
     background-color: whitesmoke;
